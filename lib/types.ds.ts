@@ -15,7 +15,7 @@ export type Project = {
     slug: string;
     isExternalRedirect: boolean;
     description?: string;
-    category?: string;
+    category?: string[];
     liveLink?: { url: string; name: string };
     client?: string;
     duration?: string;

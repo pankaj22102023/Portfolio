@@ -9,6 +9,7 @@ import cyber from '@/public/images/projects/cyber.png';
 import cyber1 from '@/public/images/projects/cyber1.png';
 import accha from '@/public/images/projects/accha.png';
 import accha1 from '@/public/images/projects/accha1.png';
+import accha2 from '@/public/images/projects/acchawalacollege.png';
 import tk from "@/public/images/projects/talent-kaksha.png";
 import sg from "@/public/images/projects/spritegenix.png";
 
@@ -95,14 +96,14 @@ export const portfolioData: PortfolioData = {
         title2: "My Major Works",
         description: "A showcase of my key projects spanning web development."
     },
-    filterCategories: ["All", "Full-Stack", "Frontend", "Backend"],
+    filterCategories: ["All", "Major", "Full-Stack", "Frontend"],
     projects: [
         {
             projectTitle: 'CyberSecurity One Stop Solution',
             slug: 'cybersecurity-one-stop-solution',
             isExternalRedirect: false,
             description: 'Cybersecurity One Stop is a premier cybersecurity expert listing platform that connects businesses and individuals with top-tier cybersecurity professionals, fraud investigators, and digital risk consultants.',
-            category: 'Full-Stack',
+            category: ["Major", 'Full-Stack'],
             liveLink: {
                 url: 'https://cyber-security-one-stop-ui-git-main-divyansh-barnwals-projects.vercel.app/',
                 name: 'cybersecurityonestop.com',
@@ -210,7 +211,7 @@ export const portfolioData: PortfolioData = {
             slug: 'accha-wala-college',
             isExternalRedirect: false,
             description: "Developed a comprehensive search engine providing access to detailed information on 25,000+ colleges and 6,000+ courses across India as well as India.",
-            category: "Full-Stack",
+            category: ["Major", "Full-Stack"],
             liveLink: {
                 url: 'https://acchawalacollege.com/',
                 name: 'acchawalacollege.com',
@@ -266,7 +267,7 @@ export const portfolioData: PortfolioData = {
             slug: 'sprite-genix',
             isExternalRedirect: true,
             description: "",
-            category: "Frontend",
+            category: ["Major", "Frontend"],
             liveLink: {
                 url: 'https://spritegenix.com/',
                 name: 'spritegenix.com',
@@ -279,13 +280,20 @@ export const portfolioData: PortfolioData = {
             slug: 'talentkaksha',
             isExternalRedirect: true,
             description: "",
-            category: "Frontend",
+            category: ["Frontend"],
             liveLink: {
                 url: 'https://talent-kakshsa-ui.vercel.app/',
                 name: 'talentkaksha.com',
             },
             client: "TalentKaksha",
             mainImage: tk,
+        },
+        {
+            projectTitle: "Accha Wala College2",
+            slug: 'accha-wala-college2',
+            isExternalRedirect: true,
+            category: ["Major", "Frontend"],
+            mainImage: accha2,
         }
     ],
 };
@@ -441,7 +449,7 @@ export const resumeData = {
         },
         {
             date: '2012 - 2015',
-            degree: 'Diploma',
+            degree: 'Secondary Education',
             university: 'C.D.L. Govt. Polytechnic Institute, Nathusari Chopta',
         },
         {
