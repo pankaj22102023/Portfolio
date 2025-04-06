@@ -6,11 +6,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
+import { cn } from "@/utils";
 
 const Portfolio = () => {
   const path = usePathname();
   const [selectedFilter, setSelectedFilter] = useState<"All" | "Major" | "Frontend" | "Full-Stack">(
-    path === "/portfolio" ? "All" : "Major"
+    path === "/portfolio" ? "All" : "Major",
   );
   const isPortfolioPath = path === "/portfolio";
 
@@ -45,10 +46,12 @@ const Portfolio = () => {
             .map((category, index) => (
               <li
                 key={index}
-                onClick={() => setSelectedFilter(category as "All" | "Major" | "Frontend" | "Full-Stack")}
-                className={`cursor-pointer rounded-full border border-dashed px-4 py-2 text-sm font-mono transition hover:bg-black hover:text-white dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-black ${
-                  selectedFilter === category ? "bg-black text-white dark:bg-white dark:text-black" : ""
-                }`}
+                onClick={() => setSelectedFilter(category as typeof selectedFilter)}
+                className={cn(
+                  "cursor-pointer rounded-full border border-dashed px-4 py-2 font-mono text-sm transition hover:bg-black hover:text-white dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-black",
+                  selectedFilter === category &&
+                    "bg-black text-white dark:bg-white dark:text-black",
+                )}
               >
                 {category}
               </li>
@@ -71,7 +74,9 @@ const Portfolio = () => {
                 >
                   <Link
                     href={
-                      project.isExternalRedirect ? project?.liveLink?.url || "#" : `portfolio/${project.slug}`
+                      project.isExternalRedirect
+                        ? project?.liveLink?.url || "#"
+                        : `portfolio/${project.slug}`
                     }
                     target={project.isExternalRedirect ? "_blank" : "_self"}
                     className="portfolio-item"
@@ -85,7 +90,9 @@ const Portfolio = () => {
                         placeholder="blur"
                       />
                       <span className="absolute right-4 top-4 rounded-full bg-black/20 px-4 py-2 text-sm text-white">
-                        {project?.category?.length === 1 ? project?.category?.[0] : project?.category?.[1]}
+                        {project?.category?.length === 1
+                          ? project?.category?.[0]
+                          : project?.category?.[1]}
                       </span>
                     </div>
                   </Link>

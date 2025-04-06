@@ -12,15 +12,21 @@ import accha1 from '@/public/images/projects/accha1.png';
 import accha2 from '@/public/images/projects/acchawalacollege.png';
 import tk from "@/public/images/projects/talent-kaksha.png";
 import sg from "@/public/images/projects/spritegenix.png";
+import simplicv from "@/public/images/projects/simplicv.png";
+import edunom from "@/public/images/projects/edunom.png";
+import nationize from "@/public/images/projects/nationize.png";
+import mazaiholidays from "@/public/images/projects/mazaiholidays.png";
+import evsmart from "@/public/images/projects/ev-smart.png";
+import ashirwadplastics from "@/public/images/projects/ashirwadplastics.png";
 
-export const resumeUrl = 'https://drive.google.com/file/d/1RfZTMKeRyHF0Awi1mqBGfl7WXobTQ2FP/view';
+export const resumeUrl = 'https://drive.google.com/file/d/1-1v0aB49BkktqF0m8VKCH9DhE9n55at2/view?usp=sharing';
 
 export const headerData = {
     mainData: {
         firstName: 'Pankaj',
         secondName: 'Prajapat',
         phone: '+(91) 8076485917',
-        email: 'er.pankaj.k4@gmail.com',
+        email: 'pankaj22102023@gmail.com',
         copywriter: 'Pankaj Prajapat',
     },
     links: [
@@ -61,7 +67,7 @@ export const aboutData = {
         title2: "About Me",
         heroAvatar: HeroAvatar,
         jobTitle: "Full Stack Web Developer. Product Designer",
-        description: "Detail-oriented professional with over 4 years in web development and 2 years in healthcare & consulting. Skilled in customer service, networking, and problem-solving. Proficient in MERN Stack and Next.js as a Full Stack Developer.",
+        description: "Experienced developer with strong frontend expertise and full stack capabilities with over 4 years in web development. Specialized in the MERN Stack and Next.js, with a strong foundation in scalable architecture, frontend performance, and API development. Proven ability to lead teams, collaborate with stakeholders, and deliver industry-level solutions.",
         yearsOfExperience: "4",
         hoursOfWorking: "20",
         projectsDone: "50",
@@ -72,19 +78,19 @@ export const aboutData = {
             id: 1,
             name: 'Full Stack',
             percent: '80',
-            icon: 'bi bi-camera',
+            icon: 'bi bi-layers', 
         },
         {
             id: 2,
             name: 'Frontend',
             percent: '98',
-            icon: 'bi bi-code-slash',
+            icon: 'bi bi-display', 
         },
         {
             id: 3,
             name: 'Backend',
             percent: '85',
-            icon: 'bi bi-search',
+            icon: 'bi bi-hdd-network', 
         },
     ]
 };
@@ -103,9 +109,9 @@ export const portfolioData: PortfolioData = {
             slug: 'cybersecurity-one-stop-solution',
             isExternalRedirect: false,
             description: 'Cybersecurity One Stop is a premier cybersecurity expert listing platform that connects businesses and individuals with top-tier cybersecurity professionals, fraud investigators, and digital risk consultants.',
-            category: ["Major", 'Full-Stack'],
+            category: ["All", 'Full-Stack', "Major"],
             liveLink: {
-                url: 'https://cyber-security-one-stop-ui-git-main-divyansh-barnwals-projects.vercel.app/',
+                url: 'https://www.cybersecurityonestop.com/',
                 name: 'cybersecurityonestop.com',
             },
             client: 'Divine Venters (Isha Foundation)',
@@ -207,11 +213,64 @@ export const portfolioData: PortfolioData = {
             ]
         },
         {
+            projectTitle: 'SimpliCV',
+            slug: 'simplicv',
+            isExternalRedirect: false,
+            description: 'Created a modern resume builder with AI-driven form auto-fill, reducing user effort by 50% and premium subscription capabilities',
+            category: ["All", 'Full-Stack', "Major"],
+            liveLink: {
+                url: 'https://www.simplicv.com/',
+                name: 'simplicv.com',
+            },
+            client: 'Sprite Genix',
+            duration: '1 Months',
+            mainImage: simplicv,
+            images: [
+                {
+                    image: simplicv,
+                    alt: 'web image'
+                },
+            ],
+            // imagesLightbox: {
+            //     image: Image,
+            //     alt: 'Image Alt'
+            // },
+            // video: {
+            //     thumbnail: Image,
+            //     url: '#'
+            // },
+            techStack: [
+                { name: 'Next.js' },
+                { name: 'Shadcn UI' },
+                { name: 'TypeScript' },
+                { name: 'Clerk' },
+                { name: 'Zustland' },
+                { name: 'Node.js' },
+                { name: 'Neon PostgreSQL' },
+                { name: 'Tailwind CSS' },
+                { name: 'Prisma' },
+                { name: 'Vercel' },
+                { name: 'Razorpay' },
+                { name: 'Zoho Email' },
+            ],
+            functionality: [
+                {
+                    title: "Functionalities",
+                    list: [
+                        "Engineered an AI auto-fill feature that intelligently populates resume sections based on minimal user input.",
+                        "Implemented real-time auto-save functionality during form completion, ensuring users never lose progress.",
+                        "Created multiple professional resume templates with customization options for diverse industries and roles.",
+                        "Designed and deployed a tiered subscription model for premium features with secure payment processing.",
+                    ],
+                },
+            ]
+        },
+        {
             projectTitle: "Accha Wala College",
             slug: 'accha-wala-college',
             isExternalRedirect: false,
             description: "Developed a comprehensive search engine providing access to detailed information on 25,000+ colleges and 6,000+ courses across India as well as India.",
-            category: ["Major", "Full-Stack"],
+            category: ["All", "Full-Stack", "Major"],
             liveLink: {
                 url: 'https://acchawalacollege.com/',
                 name: 'acchawalacollege.com',
@@ -267,7 +326,7 @@ export const portfolioData: PortfolioData = {
             slug: 'sprite-genix',
             isExternalRedirect: true,
             description: "",
-            category: ["Major", "Frontend"],
+            category: ["All", "Frontend", "Major"],
             liveLink: {
                 url: 'https://spritegenix.com/',
                 name: 'spritegenix.com',
@@ -280,7 +339,7 @@ export const portfolioData: PortfolioData = {
             slug: 'talentkaksha',
             isExternalRedirect: true,
             description: "",
-            category: ["Frontend"],
+            category: ["All", "Frontend"],
             liveLink: {
                 url: 'https://talent-kakshsa-ui.vercel.app/',
                 name: 'talentkaksha.com',
@@ -292,9 +351,69 @@ export const portfolioData: PortfolioData = {
             projectTitle: "Accha Wala College2",
             slug: 'accha-wala-college2',
             isExternalRedirect: true,
-            category: ["Major", "Frontend"],
+            category: ["All", "Frontend",],
+            liveLink: {
+                url: 'https://acchawalacollege.vercel.app/',
+                name: 'acchawalacollege.com',
+            },
             mainImage: accha2,
-        }
+        },
+        {
+            projectTitle: "ev-smart",
+            slug: 'ev-smart',
+            isExternalRedirect: true,
+            category: ["All", "Frontend",],
+            liveLink: {
+                url: 'https://ev-smart.in/',
+                name: 'ev-smart.com',
+            },
+            mainImage: evsmart,
+        },
+        {
+            projectTitle: "ashirwadplastics",
+            slug: 'ashirwadplastics',
+            isExternalRedirect: true,
+            category: ["All", "Frontend",],
+            liveLink: {
+                url: 'https://ashirwadplastics.com/',
+                name: 'ashirwadplastics.com',
+            },
+            mainImage: ashirwadplastics,
+        },
+
+        {
+            projectTitle: "edunom",
+            slug: 'edunom',
+            isExternalRedirect: true,
+            category: ["All", "Frontend",],
+            liveLink: {
+                url: 'https://edunom.com/',
+                name: 'edunom.com',
+            },
+            mainImage: edunom,
+        },
+        {
+            projectTitle: "nationize",
+            slug: 'nationize',
+            isExternalRedirect: true,
+            category: ["All", "Frontend",],
+            liveLink: {
+                url: 'https://nationize.in/',
+                name: 'nationize.com',
+            },
+            mainImage: nationize,
+        },
+        {
+            projectTitle: "mazaiholidays",
+            slug: 'mazaiholidays',
+            isExternalRedirect: true,
+            category: ["All", "Frontend",],
+            liveLink: {
+                url: 'https://mazaiholidays.in/demo/',
+                name: 'mazaiholidays.com',
+            },
+            mainImage: mazaiholidays,
+        },
     ],
 };
 
@@ -629,7 +748,7 @@ export const contactData = {
         title3: "Let's Connect",
         description: "Have a project in mind, want to hire me, a question, or just want to say hi? Feel free to reach out. I’d love to connect and discuss how we can work together!",
         phone: "+91 8076485917",
-        email: "er.pankaj.k4@gmail.com",
+        email: "pankaj22102023@gmail.com",
         address: "Sector 18, Faridabad, Haryana, India - 121002",
     }
 };

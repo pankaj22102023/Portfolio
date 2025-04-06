@@ -95,6 +95,8 @@ const Header: React.FC = () => {
             >
               <Link
                 href={item.url}
+                aria-label={item.name}
+                target="_blank"
                 className="font-mono text-sm font-medium uppercase tracking-[0.5px] text-white hover:underline"
               >
                 {item.name}
@@ -127,8 +129,9 @@ const Header: React.FC = () => {
               <li key={index} className="inline-block list-none">
                 <Link
                   href={item.url}
+                  aria-label={item.name}
                   className="hover:underline dark:text-white"
-                  target={item.name === "Resume" ? "_blank" : "_self"}
+                  target="_blank"
                 >
                   {item.name}
                 </Link>
