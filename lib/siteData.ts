@@ -12,6 +12,7 @@ import accha1 from '@/public/images/projects/accha1.png';
 import accha2 from '@/public/images/projects/acchawalacollege.png';
 import tk from "@/public/images/projects/talent-kaksha.png";
 import sg from "@/public/images/projects/spritegenix.png";
+import sg1 from "@/public/images/projects/sg1.png";
 import simplicv from "@/public/images/projects/simplicv.png";
 import edunom from "@/public/images/projects/edunom.png";
 import nationize from "@/public/images/projects/nationize.png";
@@ -35,11 +36,11 @@ export const headerData = {
             url: resumeUrl,
             icon: '',
         },
-        {
-            name: 'My DumpYard',
-            url: '#',
-            icon: '',
-        }
+        // {
+        //     name: 'My DumpYard',
+        //     url: '#',
+        //     icon: '',
+        // }
     ],
     socialLinks: [
         {
@@ -78,19 +79,19 @@ export const aboutData = {
             id: 1,
             name: 'Full Stack',
             percent: '80',
-            icon: 'bi bi-layers', 
+            icon: 'bi bi-layers',
         },
         {
             id: 2,
             name: 'Frontend',
             percent: '98',
-            icon: 'bi bi-display', 
+            icon: 'bi bi-display',
         },
         {
             id: 3,
             name: 'Backend',
             percent: '85',
-            icon: 'bi bi-hdd-network', 
+            icon: 'bi bi-hdd-network',
         },
     ]
 };
@@ -324,15 +325,42 @@ export const portfolioData: PortfolioData = {
         {
             projectTitle: "Sprite Genix",
             slug: 'sprite-genix',
-            isExternalRedirect: true,
-            description: "",
+            isExternalRedirect: false,
+            description: "Developed a visually stunning and user-friendly website for Sprite Genix, a leading provider of cutting-edge software solutions for businesses and individuals.",
             category: ["All", "Frontend", "Major"],
             liveLink: {
                 url: 'https://spritegenix.com/',
                 name: 'spritegenix.com',
             },
             client: "Sprite Genix",
+            duration: "3 Months",
             mainImage: sg,
+            images: [
+                {
+                    image: sg,
+                    alt: 'web image'
+                },
+                {
+                    image: sg1,
+                    alt: 'web image'
+                },
+            ],
+            techStack: [
+                { name: 'Next.js' },
+                { name: 'JavaScript' },
+                { name: 'BootStrap' },
+                { name: 'DigitalOcean' },
+            ],
+            functionality: [
+                {
+                    title: "Functionalities",
+                    list: [
+                        "Boosted page load performance by 45% through Next.js optimization techniques including ISR, SSR, and targeted frontend tuning.",
+                        "Scaled the company’s official site to 22,000+ statically generated pages.",
+                        "Significantly enhancing SEO and boosting organic searchperformance by 30% via JSON-LD, automated sitemap generation, and integration of Google SEO tools.",
+                    ],
+                },
+            ]
         },
         {
             projectTitle: "TalentKaksha",
@@ -380,7 +408,6 @@ export const portfolioData: PortfolioData = {
             },
             mainImage: ashirwadplastics,
         },
-
         {
             projectTitle: "edunom",
             slug: 'edunom',
@@ -569,7 +596,7 @@ export const resumeData = {
         {
             date: '2012 - 2015',
             degree: 'Secondary Education',
-            university: 'C.D.L. Govt. Polytechnic Institute, Nathusari Chopta',
+            university: 'C.D.L. Govt. Institute, Sirsa',
         },
         {
             date: '2011 - 2012',
