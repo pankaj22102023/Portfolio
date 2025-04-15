@@ -50,7 +50,7 @@ export const headerData = {
         },
         {
             name: 'Linkedin',
-            url: 'https://www.linkedin.com/in/pankajk4/',
+            url: 'https://www.linkedin.com/in/pankaj2210/',
             icon: 'bi bi-linkedin',
         },
         {
